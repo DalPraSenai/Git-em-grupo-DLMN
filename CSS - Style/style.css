@@ -1,22 +1,159 @@
-body {
-    background-color: #020d31;
-    color: #EDE6D6;
-    text-align: center;
-    min-height: 100vh;
+/* ===== Variáveis ===== */
+:root {
+    --cor-fundo: #0B0708;
+    --cor-superficie: #150A0B;
+    --cor-vinho-escuro: #3D0E14;
+    --cor-vinho: #6B1622;
+    --cor-bronze: #C98A4B;
+    --cor-bronze-claro: #E8C9A0;
+    --cor-texto: #D8C5BD;
+    --cor-texto-secundario: #9A8782;
+
+    --fonte-titulo: 'Cinzel', serif;
+    --fonte-corpo: 'EB Garamond', serif;
 }
 
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: var(--fonte-corpo);
+    text-align: center;
+    min-height: 100vh;
+    padding-bottom: 60px;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+    background-color: var(--cor-superficie) !important;
+    border-bottom: 1px solid var(--cor-vinho);
+}
+
+.navbar-brand,
+.nav-link {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-bronze) !important;
+    letter-spacing: 0.5px;
+}
+
+.nav-link.active {
+    color: var(--cor-bronze-claro) !important;
+}
+
+.dropdown-menu {
+    background-color: var(--cor-superficie);
+    border: 1px solid var(--cor-vinho);
+}
+
+.dropdown-item {
+    color: var(--cor-texto);
+    font-family: var(--fonte-corpo);
+}
+
+.dropdown-item:hover {
+    background-color: var(--cor-vinho-escuro);
+    color: var(--cor-bronze-claro);
+}
+
+/* Rodapé. obs: falta algumas alteraçoes */
 footer {
     text-align: center;
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
+    background-color: var(--cor-superficie);
+    border-top: 1px solid var(--cor-vinho);
+    padding: 10px 0;
 }
 
-.Titulo{
-    background-color: #1F1B18;
-    color: #7A1F2B;
+.pFooter {
+    font-family: var(--fonte-corpo);
+    font-style: italic;
+    color: var(--cor-texto-secundario);
+    margin: 0;
+    font-size: 14px;
 }
+
+/* Titulo do Index */
+.Titulo {
+    font-family: var(--fonte-titulo);
+    background-color: var(--cor-superficie);
+    color: var(--cor-bronze);
+    padding: 40px 20px;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.pInicio {
+    font-family: var(--fonte-corpo);
+    font-size: 18px;
+    color: var(--cor-texto);
+    max-width: 700px;
+    margin: 16px auto;
+    padding: 0 20px;
+    line-height: 1.7;
+}
+
+.botaoCatalogo {
+    display: inline-block;
+    font-family: var(--fonte-titulo);
+    background-color: var(--cor-vinho-escuro);
+    color: var(--cor-bronze-claro);
+    border: 1px solid var(--cor-vinho);
+    border-radius: 6px;
+    padding: 12px 28px;
+    margin: 24px 0 40px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.botaoCatalogo:hover {
+    background-color: var(--cor-vinho);
+    color: var(--cor-bronze-claro);
+}
+
+
+.containerMichel {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+    max-width: 700px;
+    margin: 20px auto 60px;
+    padding: 0 20px;
+}
+
+.quadrosMichel {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid var(--cor-vinho);
+    border-radius: 4px;
+    background-color: var(--cor-superficie);
+}
+
+
+.pSobre {
+    font-family: var(--fonte-corpo);
+    font-size: 17px;
+    color: var(--cor-texto);
+    max-width: 700px;
+    margin: 16px auto;
+    padding: 0 20px;
+    line-height: 1.7;
+}
+
+h2 {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-bronze);
+    letter-spacing: 1px;
+    margin: 32px 0 24px;
+}
+
+
 .card {
     background-color: transparent;
     border: none;
@@ -32,10 +169,10 @@ footer {
     aspect-ratio: 731 / 980;
     max-width: 200px;
     margin: 0 auto;
-    padding: 0;
-    
-
+    padding: 16px 12px;
+    color: var(--cor-vinho-escuro);
 }
+
 .card-body img {
     width: 60px;
     height: 60px;
@@ -43,15 +180,59 @@ footer {
     border-radius: 50%;
     display: block;
     margin: 0 auto 8px auto;
+    border: 2px solid var(--cor-bronze);
 }
+
+.card-body .card-title {
+    font-family: var(--fonte-titulo);
+    font-size: 15px;
+    color: var(--cor-vinho-escuro);
+}
+
+.card-body .card-text {
+    font-family: var(--fonte-corpo);
+    font-size: 13px;
+}
+
 .card-body-contador{
-    background-color: #1F1B18;
-    color: #C9A24B;
+    background-color: var(--cor-superficie);
+    color: var(--cor-bronze);
+    border: 1px solid var(--cor-vinho);
+    border-radius: 8px;
+    padding: 20px;
 }
-.quadrosMichel{
-    width: 100px;
-    height: 150px;
+
+.card-body-contador .card-title {
+    font-family: var(--fonte-titulo);
+    font-size: 32px;
+    color: var(--cor-bronze-claro);
+}
+
+.card-body-contador .card-text {
+    font-family: var(--fonte-corpo);
+    color: var(--cor-texto-secundario);
+    margin: 0;
+}
+
+/* ===== Cards (Equipe - sobre.html) ===== */
+.row .card.h-100 {
+    background-color: var(--cor-superficie);
+    border: 1px solid var(--cor-vinho);
+    border-radius: 8px;
+}
+
+.row .card.h-100 .card-img-top {
+    border-bottom: 1px solid var(--cor-vinho);
+    height: 220px;
     object-fit: cover;
-    display: block;
-    margin: 0 auto 8px auto;
+}
+
+.row .card.h-100 .card-title {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-bronze);
+    font-size: 16px;
+}
+
+.row .card.h-100 .card-text {
+    font-family: var(--fonte-corpo);
 }
