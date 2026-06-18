@@ -48,3 +48,10 @@ footer {
     background-color: #1F1B18;
     color: #C9A24B;
 }
+.quadrosMichel{
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 8px auto;
+}
