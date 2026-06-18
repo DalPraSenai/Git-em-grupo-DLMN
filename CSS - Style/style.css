@@ -48,10 +48,16 @@ footer {
     background-color: #1F1B18;
     color: #C9A24B;
 }
-.quadrosMichel{
+.containerMichel {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+}
+
+.quadrosMichel {
     width: 100px;
     height: 150px;
     object-fit: cover;
     display: block;
-    margin: 0 auto 8px auto;
+    margin: 0 auto;
 }
