@@ -39,7 +39,19 @@
             </div>
           </div>
         </nav>
+      </header>
 
+      <main class="container mt-4">
+
+        <!-- CARD DO CONTADOR DE ITENS REGISTRADOS, NÃO REPETE -->
+        <div class="card text-center mb-4">
+          <div class="card-body">
+            <h3 class="card-title" id="contador-itens">1</h3>
+            <p class="card-text">itens catalogados no Legado de Tartarius</p>
+          </div>
+        </div>
+
+        <!-- BARRA DE BUSCA -->
         <div class="mb-4">
           <input 
             type="text" 
@@ -48,27 +60,16 @@
             placeholder="Buscar item por nome..."
           >
         </div>
-        
-        <div class="row g-4 justify-content-center" id="lista-de-itens"></div>
-      </header>
 
-        <!-- CARDS DO CONTADOR DE ITENS REGISTRADOS,NAO REPETE-->
-
-        <div class="card text-center">
-          <div class="card-body">
-            <h3 class="card-title" id="contador-itens">1</h3>
-            <p class="card-text">itens catalogados no Legado de Tartarius</p>
-          </div>
-        </div>
-        
+        <!-- LISTA DE ITENS -->
         <div class="row g-4 justify-content-center" id="lista-de-itens">
-  
-          <!-- CARD DE ITEM, REPETE PARA CADA ITEM COM JAVA -->
+
+          <!-- CARD DE ITEM, REPETE PARA CADA ITEM COM JAVASCRIPT -->
           <div class="col-md-4">
             <div class="card h-100">
               <div class="card-body">
                 <h5 class="card-title">Nome do item</h5>
-                <img src="LINK DA IMAGEM" alt="Descricao">
+                <img src="LINK DA IMAGEM" alt="Descricao" class="img-fluid">
                 <span class="badge bg-danger">Raridade</span>
                 <p class="text-muted small">Categoria</p>
                 <p class="card-text">Descrição curta aqui.</p>
@@ -76,36 +77,9 @@
             </div>
           </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         </div>
-      </div>
+
+      </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
