@@ -1,0 +1,50 @@
+body {
+    background-color: #020d31;
+    color: #EDE6D6;
+    text-align: center;
+    min-height: 100vh;
+}
+
+footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.Titulo{
+    background-color: #1F1B18;
+    color: #7A1F2B;
+}
+.card {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.card-body{
+    background-color: #ffffff00;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/012/981/788/non_2x/old-parchment-paper-sheet-vintage-aged-or-texture-background-png.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    aspect-ratio: 731 / 980;
+    max-width: 200px;
+    margin: 0 auto;
+    padding: 0;
+    
+
+}
+.card-body img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 8px auto;
+}
+.card-body-contador{
+    background-color: #1F1B18;
+    color: #C9A24B;
+}
