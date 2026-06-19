@@ -175,7 +175,7 @@ h2 {
 
 .card-body .card-text {
     font-family: 'EB Garamond', serif;
-    font-size: 13px;
+    font-size: 10px;
 }
 
 .card-body-contador{
@@ -201,8 +201,8 @@ h2 {
 /* Cards falta algumas alterações revisar !!!!! */
 .row .card.h-100 {
     background-color: #150A0B;
-    border: 1px solid #6B1622;
-    border-radius: 8px;
+    border: 1px solid #150A0B;
+    border-radius: 4px;
 }
 
 .row .card.h-100 .card-img-top {
