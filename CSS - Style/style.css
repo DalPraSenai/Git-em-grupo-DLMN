@@ -1,58 +1,42 @@
-/* ===== Variáveis ===== */
-:root {
-    --cor-fundo: #0B0708;
-    --cor-superficie: #150A0B;
-    --cor-vinho-escuro: #3D0E14;
-    --cor-vinho: #6B1622;
-    --cor-bronze: #C98A4B;
-    --cor-bronze-claro: #E8C9A0;
-    --cor-texto: #D8C5BD;
-    --cor-texto-secundario: #9A8782;
-
-    --fonte-titulo: 'Cinzel', serif;
-    --fonte-corpo: 'EB Garamond', serif;
-}
-
 
 body {
-    background-color: var(--cor-fundo);
-    color: var(--cor-texto);
-    font-family: var(--fonte-corpo);
+    background-color: #0B0708;
+    color: #D8C5BD;
+    font-family: 'EB Garamond', serif;
     text-align: center;
     min-height: 100vh;
     padding-bottom: 60px;
 }
 
-/* ===== Navbar ===== */
 .navbar {
-    background-color: var(--cor-superficie) !important;
-    border-bottom: 1px solid var(--cor-vinho);
+    background-color: #150A0B !important;
+    border-bottom: 1px solid #6B1622;
 }
 
 .navbar-brand,
 .nav-link {
-    font-family: var(--fonte-titulo);
-    color: var(--cor-bronze) !important;
+    font-family: 'Cinzel', serif;
+    color:  #C98A4B !important;
     letter-spacing: 0.5px;
 }
 
 .nav-link.active {
-    color: var(--cor-bronze-claro) !important;
+    color: #E8C9A0 !important;
 }
 
 .dropdown-menu {
-    background-color: var(--cor-superficie);
-    border: 1px solid var(--cor-vinho);
+    background-color: #150A0B;
+    border: 1px solid  #6B1622;
 }
 
 .dropdown-item {
-    color: var(--cor-texto);
-    font-family: var(--fonte-corpo);
+    color: #D8C5BD;
+    font-family: 'EB Garamond', serif;
 }
 
 .dropdown-item:hover {
-    background-color: var(--cor-vinho-escuro);
-    color: var(--cor-bronze-claro);
+    background-color:  #3D0E14;
+    color: #E8C9A0;
 }
 
 /* Rodapé. obs: falta algumas alteraçoes */
@@ -62,33 +46,33 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: var(--cor-superficie);
-    border-top: 1px solid var(--cor-vinho);
+    background-color:  #150A0B;
+    border-top: 1px solid  #6B1622;
     padding: 10px 0;
 }
 
 .pFooter {
-    font-family: var(--fonte-corpo);
+    font-family: 'EB Garamond', serif;
     font-style: italic;
-    color: var(--cor-texto-secundario);
+    color:  #9A8782;
     margin: 0;
     font-size: 14px;
 }
 
 /* Titulo do Index */
 .Titulo {
-    font-family: var(--fonte-titulo);
-    background-color: var(--cor-superficie);
-    color: var(--cor-bronze);
+    font-family: 'Cinzel', serif;
+    background-color:  #150A0B;
+    color:  #C98A4B;
     padding: 40px 20px;
     margin: 0;
     letter-spacing: 1px;
 }
 
 .pInicio {
-    font-family: var(--fonte-corpo);
+    font-family: 'EB Garamond', serif;
     font-size: 18px;
-    color: var(--cor-texto);
+    color:  #D8C5BD;
     max-width: 700px;
     margin: 16px auto;
     padding: 0 20px;
@@ -97,10 +81,10 @@ footer {
 
 .botaoCatalogo {
     display: inline-block;
-    font-family: var(--fonte-titulo);
-    background-color: var(--cor-vinho-escuro);
-    color: var(--cor-bronze-claro);
-    border: 1px solid var(--cor-vinho);
+    font-family: 'Cinzel', serif;
+    background-color: #3D0E14;
+    color: #E8C9A0;
+    border: 1px solid #6B1622;
     border-radius: 6px;
     padding: 12px 28px;
     margin: 24px 0 40px;
@@ -110,8 +94,8 @@ footer {
 }
 
 .botaoCatalogo:hover {
-    background-color: var(--cor-vinho);
-    color: var(--cor-bronze-claro);
+    background-color: #6B1622;
+    color: #E8C9A0;
 }
 
 
@@ -130,16 +114,16 @@ footer {
     object-fit: cover;
     display: block;
     margin: 0 auto;
-    border: 2px solid var(--cor-vinho);
+    border: 2px solid #6B1622;
     border-radius: 4px;
-    background-color: var(--cor-superficie);
+    background-color: #150A0B; 
 }
 
 
 .pSobre {
-    font-family: var(--fonte-corpo);
+    font-family: 'EB Garamond', serif;
     font-size: 17px;
-    color: var(--cor-texto);
+    color: #D8C5BD;
     max-width: 700px;
     margin: 16px auto;
     padding: 0 20px;
@@ -147,8 +131,8 @@ footer {
 }
 
 h2 {
-    font-family: var(--fonte-titulo);
-    color: var(--cor-bronze);
+    font-family: 'Cinzel', serif;
+    color: #C98A4B;
     letter-spacing: 1px;
     margin: 32px 0 24px;
 }
@@ -170,7 +154,7 @@ h2 {
     max-width: 200px;
     margin: 0 auto;
     padding: 16px 12px;
-    color: var(--cor-vinho-escuro);
+    color: #3D0E14;
 }
 
 .card-body img {
@@ -180,59 +164,59 @@ h2 {
     border-radius: 50%;
     display: block;
     margin: 0 auto 8px auto;
-    border: 2px solid var(--cor-bronze);
+    border: 2px solid #C98A4B;
 }
 
 .card-body .card-title {
-    font-family: var(--fonte-titulo);
+    font-family: 'Cinzel', serif;
     font-size: 15px;
-    color: var(--cor-vinho-escuro);
+    color: #3D0E14;
 }
 
 .card-body .card-text {
-    font-family: var(--fonte-corpo);
+    font-family: 'EB Garamond', serif;
     font-size: 13px;
 }
 
 .card-body-contador{
-    background-color: var(--cor-superficie);
-    color: var(--cor-bronze);
-    border: 1px solid var(--cor-vinho);
+    background-color: #150A0B;
+    color: #C98A4B;
+    border: 1px solid #6B1622;
     border-radius: 8px;
     padding: 20px;
 }
 
 .card-body-contador .card-title {
-    font-family: var(--fonte-titulo);
+    font-family: 'Cinzel', serif;
     font-size: 32px;
-    color: var(--cor-bronze-claro);
+    color: #E8C9A0;
 }
 
 .card-body-contador .card-text {
-    font-family: var(--fonte-corpo);
-    color: var(--cor-texto-secundario);
+    font-family: 'EB Garamond', serif;
+    color: #9A8782;
     margin: 0;
 }
 
-/* ===== Cards (Equipe - sobre.html) ===== */
+/* Cards falta algumas alterações revisar !!!!! */
 .row .card.h-100 {
-    background-color: var(--cor-superficie);
-    border: 1px solid var(--cor-vinho);
+    background-color: #150A0B;
+    border: 1px solid #6B1622;
     border-radius: 8px;
 }
 
 .row .card.h-100 .card-img-top {
-    border-bottom: 1px solid var(--cor-vinho);
+    border-bottom: 1px solid #6B1622;
     height: 220px;
     object-fit: cover;
 }
 
 .row .card.h-100 .card-title {
-    font-family: var(--fonte-titulo);
-    color: var(--cor-bronze);
+    font-family: 'Cinzel', serif;
+    color: #C98A4B;
     font-size: 16px;
 }
 
 .row .card.h-100 .card-text {
-    font-family: var(--fonte-corpo);
+    font-family: 'EB Garamond', serif;
 }
