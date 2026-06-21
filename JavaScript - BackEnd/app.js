@@ -1,9 +1,4 @@
-/* para guardar os itens :*/
-localStorage.setItem('itens', JSON.stringify(arrayDeItens));
-
-/* e para ler os dados: */
-const itensGuardados = JSON.parse(localStorage.getItem('itens'));
-
+import { inicializarItens, getItens, salvarItens } from "./storage.js";
 
 const itens = [
     {
@@ -55,3 +50,9 @@ const itens = [
       imagem: "img/grimorio.png"
     }
   ];
+
+  document.addEventListener('DOMContentLoaded', () => {
+      inicializarItens(itens);
+      console.log("Itens carregados do localStorage:", getItens());
+  });
+  

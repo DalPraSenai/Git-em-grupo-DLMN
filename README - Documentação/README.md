@@ -20,7 +20,7 @@ O objetivo do projeto é reconstruir e organizar registros perdidos após a qued
 | ------------ | ------------- |
 |  Daniel      | Tech Lead     |
 |  Luis        | Front-End     |
-|  Matheus     | JavaScript    |
+|  Matheus     | Back-End      |
 |  Nathalia    | UX / Conteúdo |
 
 ---
