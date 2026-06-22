@@ -1,4 +1,5 @@
 import { inicializarItens, getItens, salvarItens } from "./storage.js";
+import { renderizar } from "./catalogo.js";
 
 const itens = [
     {
@@ -54,5 +55,7 @@ const itens = [
   document.addEventListener('DOMContentLoaded', () => {
       inicializarItens(itens);
       console.log("Itens carregados do localStorage:", getItens());
+
+      renderizar();
   });
   
