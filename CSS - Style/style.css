@@ -1,22 +1,17 @@
 
-body {
-    background-color: #0B0708;
-    color: #D8C5BD;
-    font-family: 'EB Garamond', serif;
-    text-align: center;
-    min-height: 100vh;
-    padding-bottom: 60px;
-}
-
-.navbar {
+   .navbar {
     background-color: #150A0B !important;
     border-bottom: 1px solid #6B1622;
 }
 
-.navbar-brand,
+.navbar-brand{
+    font-family: 'Cinzel', serif;
+    color: #C98A4B !important;
+    letter-spacing: 0.5px;
+}
 .nav-link {
     font-family: 'Cinzel', serif;
-    color:  #C98A4B !important;
+    color: #C98A4B !important;
     letter-spacing: 0.5px;
 }
 
@@ -26,7 +21,7 @@ body {
 
 .dropdown-menu {
     background-color: #150A0B;
-    border: 1px solid  #6B1622;
+    border: 1px solid #6B1622;
 }
 
 .dropdown-item {
@@ -35,35 +30,26 @@ body {
 }
 
 .dropdown-item:hover {
-    background-color:  #3D0E14;
+    background-color: #3D0E14;
     color: #E8C9A0;
 }
 
-/* Rodapé. obs: falta algumas alteraçoes */
-footer {
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color:  #150A0B;
-    border-top: 1px solid  #6B1622;
-    padding: 10px 0;
-}
-
-.pFooter {
+ 
+ /* Body */
+body {
+    background-color: #0B0708;
+    color: #D8C5BD;
     font-family: 'EB Garamond', serif;
-    font-style: italic;
-    color:  #9A8782;
-    margin: 0;
-    font-size: 14px;
+    text-align: center;
+    min-height: 100vh;
+    padding-bottom: 60px;
 }
 
 /* Titulo do Index */
 .Titulo {
     font-family: 'Cinzel', serif;
-    background-color:  #150A0B;
-    color:  #C98A4B;
+    background-color: #150A0B;
+    color: #C98A4B;
     padding: 40px 20px;
     margin: 0;
     letter-spacing: 1px;
@@ -72,7 +58,7 @@ footer {
 .pInicio {
     font-family: 'EB Garamond', serif;
     font-size: 18px;
-    color:  #D8C5BD;
+    color: #D8C5BD;
     max-width: 700px;
     margin: 16px auto;
     padding: 0 20px;
@@ -98,7 +84,6 @@ footer {
     color: #E8C9A0;
 }
 
-
 .containerMichel {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -116,9 +101,8 @@ footer {
     margin: 0 auto;
     border: 2px solid #6B1622;
     border-radius: 4px;
-    background-color: #150A0B; 
+    background-color: #150A0B;
 }
-
 
 .pSobre {
     font-family: 'EB Garamond', serif;
@@ -138,13 +122,15 @@ h2 {
 }
 
 
+
+ /* Cards */
 .card {
     background-color: transparent;
     border: none;
     box-shadow: none;
 }
 
-.card-body{
+.card-body {
     background-color: #ffffff00;
     background-image: url(https://static.vecteezy.com/system/resources/previews/012/981/788/non_2x/old-parchment-paper-sheet-vintage-aged-or-texture-background-png.png);
     background-size: cover;
@@ -178,7 +164,7 @@ h2 {
     font-size: 10px;
 }
 
-.card-body-contador{
+.card-body-contador {
     background-color: #150A0B;
     color: #C98A4B;
     border: 1px solid #6B1622;
@@ -219,4 +205,26 @@ h2 {
 
 .row .card.h-100 .card-text {
     font-family: 'EB Garamond', serif;
+}
+
+
+/* Rodapé */
+/* obs: falta algumas alterações */
+footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #150A0B;
+    border-top: 1px solid #6B1622;
+    padding: 10px 0;
+}
+
+.pFooter {
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    color: #9A8782;
+    margin: 0;
+    font-size: 14px;
 }
