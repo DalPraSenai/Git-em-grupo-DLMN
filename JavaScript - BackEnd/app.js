@@ -20,11 +20,11 @@ const itens = [
     },
     {
       id: 3,
-      nome: "Presa de Lobisomem",
-      categoria: "Relíquia",
+      nome: "Amuleto de Lobisomem",
+      categoria: "Amuleto",
       raridade: "Comum",
       descricao: "Um souvenir de uma das muitas brigas de Tartarius. Ele dizia que era 'só decoração'.",
-      imagem: "https://png.pngtree.com/png-clipart/20230623/original/pngtree-vampire-fangs-png-image_9205259.png"
+      imagem: "Imagens\Amuleto de lambisome.jpeg"
     },
     {
       id: 4,
