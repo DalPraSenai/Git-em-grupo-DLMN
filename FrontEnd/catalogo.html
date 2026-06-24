@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../CSS - Style/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Itens Magicos</title>
+    <title>Cadastro de Clientes</title> 
 </head>
 <body>
     <header>
@@ -19,10 +19,10 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="catalogo.html">Itens Magicos</a>
+                  <a class="nav-link" href="catalogo.html">Itens Magicos</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="cadastro.html">Cadastro de Clientes</a>
+                  <a class="nav-link active" aria-current="page" href="cadastro.html">Cadastro de Clientes</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="sobre.html">Sobre</a>
@@ -43,45 +43,32 @@
         </nav>
       </header>
 
-      <main class="container mt-4">
-
-        <div class="card text-center mb-4">
-          <div class="card-body-contador">
-            <h3 class="card-title" id="contador-itens">1</h3>
-            <p class="card-text">itens catalogados no Legado de Tartarius</p>
-          </div>
+      <section class="nomeDeUsuario">
+        <div> 
+          <label>Nome de Usuario </label>
+          <input type="text" id="nomeDeUsuario">
+        
+          <label>E-mail</label>
+          <input type="email" id="email">
+        
+          <label>Senha</label>
+          <input type="senha" id="senha">
+      
+          <label>Confirme a Senha</label>
+          <input type="senha" id="confirmeSenha">
+        
+          <button onclick="cadastrar"> Cadastrar </button>
         </div>
+      </section>
 
-        <div class="mb-4">
-          <input 
-            type="text" 
-            class="form-control" 
-            id="input-busca" 
-            placeholder="Buscar item por nome..."
-          >
-        </div>
 
-        <div class="row g-4 justify-content-center" id="lista-de-itens">
-            </div>
 
-      </main>
 
-      <template id="template-card">
-        <div class="col-md-4">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title item-nome"></h5>
-              <img src="" alt="" class="img-fluid item-imagem">
-              <span class="badge item-raridade"></span>
-              <p class="text-muted small item-categoria"></p>
-              <p class="card-text item-descricao"></p>
-            </div>
-          </div>
-        </div>
-      </template>
 
+
+      
       <footer class="footer"> <p class="pFooter">O Legado de Tartarius &copy; 2026 — Grupo Tartarius</p> </footer>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-      <script type="module" src="../../JavaScript - BackEnd/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="../JavaScript - BackEnd/cadastro.js"></script>
 </body>
 </html>
