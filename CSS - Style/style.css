@@ -56,6 +56,24 @@ body {
     letter-spacing: 1px;
 }
 
+.cadastro {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardCadastro {
+    background-color:#0B0708;
+    width: 350px;
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.3);
+};
+
 .pInicio {
     font-family: 'EB Garamond', serif;
     font-size: 18px;
@@ -256,3 +274,4 @@ footer {
 .card-dev img{
     border-radius: 0%;
 }
+
