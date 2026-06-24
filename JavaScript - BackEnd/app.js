@@ -24,7 +24,7 @@ const itens = [
       categoria: "Amuleto",
       raridade: "Comum",
       descricao: "Um souvenir de uma das muitas brigas de Tartarius. Ele dizia que era 'só decoração'.",
-      imagem: "../Imagens/amuleto de lobisomem.jpeg"
+      imagem: "../Imagens/amuleto de lobisomem.png"
     },
     {
       id: 4,
