@@ -253,3 +253,6 @@ footer {
     margin: 0;
     font-size: 14px;
 }
+.card-dev img{
+    border-radius: 0%;
+}
