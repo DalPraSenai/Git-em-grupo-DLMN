@@ -1,6 +1,5 @@
-/* NavBar */
 
-.navbar {
+   .navbar {
     background-color: #150A0B !important;
     border-bottom: 1px solid #6B1622;
 }
@@ -122,31 +121,7 @@ h2 {
     margin: 32px 0 24px;
 }
 
-.nomeDeUsuario{
-    font-family: 'EB Garamond', serif;
-    color: #C98A4B;
-    letter-spacing: 1px;
-    margin: 32px 0 24px;
-}
 
-#email{
-    font-family: 'EB Garamond', serif;
-    color: #C98A4B;
-    letter-spacing: 1px;
-    margin: 32px 0 24px;
-}
-#senha{
-    font-family: 'EB Garamond', serif;
-    color: #C98A4B;
-    letter-spacing: 1px;
-    margin: 32px 0 24px;
-}
-#confirmeSenha{
-    font-family: 'EB Garamond', serif;
-    color: #C98A4B;
-    letter-spacing: 1px;
-    margin: 32px 0 24px;
-}
 
  /* Cards */
 .card {
@@ -231,6 +206,19 @@ h2 {
 .row .card.h-100 .card-text {
     font-family: 'EB Garamond', serif;
 }
+.row .card-text text-muted{
+    
+        font-family: 'EB Garamond', serif;
+        color: #9A8782;
+        font-size: 14px;
+}
+.card-dev{
+    background-color: #150A0B;
+    border: 1px solid #6B1622;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
 
 
 /* Rodapé */
@@ -252,7 +240,4 @@ footer {
     color: #9A8782;
     margin: 0;
     font-size: 14px;
-}
-.card-dev img{
-    border-radius: 0%;
 }
