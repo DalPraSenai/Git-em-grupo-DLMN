@@ -54,23 +54,33 @@
   </nav>
 </header>
 
-      <section class="nomeDeUsuario">
-        <div> 
-          <label>Nome de Usuario </label>
-          <input type="text" id="nomeDeUsuario">
-        
-          <label>E-mail</label>
-          <input type="email" id="email">
-        
-          <label>Senha</label>
-          <input type="password" id="senha">
-      
-          <label>Confirme a Senha</label>
-          <input type="password" id="confirmeSenha">
-        
-          <button onclick="cadastrar()"> Cadastrar </button>
-        </div>
-      </section>
+<section class="cadastro">
+  <div class="card-Cadastro">
+    <h1 class="login-titulo">Crie seu Login</h1>
+    <p class="login-subtitulo">O Legado de Tartarius</p>
+
+    <div class="card-Email">
+      <label class="login-label" for="login-email">E-mail</label>
+      <input class="login-input" id="login-email" type="email" placeholder="seu@email.com" autocomplete="email">
+    </div>
+
+    <div class="card-Senha">
+      <label class="login-label" for="login-senha">Senha</label>
+      <input class="login-input" id="login-senha" type="password" placeholder="Sua senha secreta..." autocomplete="current-password">
+      <span class="login-esqueceu">Esqueceu a senha?</span>
+    </div>
+
+    <button class="card-btn" onclick="login()">Faça com o seu Login</button>
+
+    <div class="card-divisor">
+      <hr><span>ainda não possui uma conta?</span><hr>
+    </div>
+
+    <p class="card-registro">
+      <a href="cadastro.html">Registrar-se</a>
+    </p>
+  </div>
+</section>
 
 
 
@@ -78,7 +88,7 @@
 
 
       
-      <footer class="footer"> <p class="pFooter">O Legado de Tartarius &copy; 2026 — Grupo Tartarius</p> </footer>
+    <footer class="footer"> <p class="pFooter">O Legado de Tartarius &copy; 2026 — Grupo Tartarius</p> </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script type="module" src="../JavaScript - BackEnd/cadastro.js"></script>
 </body>
