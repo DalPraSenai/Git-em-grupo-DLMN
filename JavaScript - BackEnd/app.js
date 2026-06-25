@@ -1,5 +1,5 @@
 import { inicializarItens, getItens, salvarItens } from "./storage.js";
-import { renderizar } from "./catalogo.js";
+import { renderizar, inicializarFiltros } from "./catalogo.js";
 
 const itens = [
     {
@@ -56,6 +56,7 @@ const itens = [
       inicializarItens(itens);
       console.log("Itens carregados do localStorage:", getItens());
 
+      inicializarFiltros();
       renderizar();
   });
   
