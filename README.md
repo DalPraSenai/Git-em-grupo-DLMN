@@ -249,11 +249,4 @@ GitHub: [https://github.com/DalPraSenai/Git-em-grupo-DLMN]
 Board: [https://trello.com/invite/b/6a31ea0b0526f0de0f0ec6da/ATTI1d2a8ed6645da41def1fe9a629f016ad9ABE027A/prova-pratica-michel]
 
 
-## Imagens
-Vamos usar tudo no cloudnary [https://cloudinary.com/home]
-Criem a conta e me avisem, para eu poder criar a area de trabalho. 
-Contas criadas: 
-Daniel [✓]
-Luis [X]
-Matheus [X]
-Nathalia [X]
+
