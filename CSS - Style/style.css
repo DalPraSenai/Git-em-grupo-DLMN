@@ -54,6 +54,10 @@ body {
     margin: 0;
     letter-spacing: 1px;
 }
+/* Mensagem vazia */
+.text-muted {
+    color: #907858 !important;
+}
 
 .cadastro {
     min-height: calc(100vh - 149px);
@@ -278,7 +282,6 @@ h2 {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    aspect-ratio: 731 / 980;
     max-width: 200px;
     margin: 0 auto;
     padding: 16px 12px;
