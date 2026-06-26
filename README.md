@@ -31,7 +31,6 @@ O objetivo do projeto é reconstruir e organizar registros perdidos após a qued
 * CSS3
 * Bootstrap 5
 * JavaScript
-* Git
 * GitHub
 * GitHub Projects / Trello / Notion (Kanban)
 
@@ -40,20 +39,24 @@ O objetivo do projeto é reconstruir e organizar registros perdidos após a qued
 ## Estrutura do Projeto
 
 ```text
-legado-de-tartarius/
+Git-em-grupo-DLMN/
 │
-├── index.html
-├── catalogo.html
-├── cadastro.html
-├── sobre.html
+├── FrontEnd/
+│   ├── index.html
+│   ├── catalogo.html
+│   ├── cadastro.html
+│   └── sobre.html
 │
-├── css/
+├── JavaScript - BackEnd/
+│   ├── app.js
+│   ├── cadastro.js
+│   ├── catalogo.js
+│   └── storage.js
+│
+├── CSS - Style/
 │   └── style.css
 │
-├── js/
-│   └── app.js
-│
-├── img/
+├── Imagens/
 │
 └── README.md
 ```
@@ -216,18 +219,18 @@ Cada tarefa deve possuir:
 
 ## Checklist de Entrega
 
-* [ ] Página inicial concluída
-* [ ] Catálogo funcional
-* [ ] Cadastro funcional
-* [ ] Página Sobre concluída
-* [ ] Busca em tempo real
-* [ ] Filtro por categoria
-* [ ] Contador de itens
-* [ ] LocalStorage funcionando
+* [✓] Página inicial concluída
+* [✓] Catálogo funcional
+* [✓] Cadastro funcional
+* [✓] Página Sobre concluída
+* [✓] Busca em tempo real
+* [✓] Filtro por categoria
+* [✓] Contador de itens
+* [✓] LocalStorage funcionando
 * [ ] Responsividade mobile
 * [ ] README atualizado
-* [ ] Kanban atualizado
-* [ ] Todos os integrantes possuem commits
+* [✓] Kanban atualizado
+* [✓] Todos os integrantes possuem commits
 * [ ] Projeto revisado pela equipe
 
 ---
