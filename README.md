@@ -253,3 +253,17 @@ Board: [https://trello.com/invite/b/6a31ea0b0526f0de0f0ec6da/ATTI1d2a8ed6645da41
 
 
 
+
+## Screenshots
+
+### Catálogo completo
+![Catálogo com todos os itens](Imagens/screenshot1.png.jpeg)
+
+### Busca em tempo real
+![Busca filtrando por "ada"](Imagens/screenshot2.png.jpeg)
+
+### Filtro por categoria
+![Filtro ativo na categoria Amuleto](Imagens/screenshot4.png.jpeg)
+
+### Nenhum resultado encontrado
+![Mensagem de item não encontrado](Imagens/screenshot3.png.jpeg)
