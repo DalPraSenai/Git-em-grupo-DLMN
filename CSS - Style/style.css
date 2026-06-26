@@ -59,6 +59,32 @@ body {
     color: #ac7619 !important;
 }
 
+
+/* Hero/Blur */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    padding: 40px 20px;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('../Imagens/RE1UR_hall_principal.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(4px);
+    transform: scale(1.05);
+    z-index: 0;
+}
+
+.hero > * {
+    position: relative;
+    z-index: 1;
+}
+
 .cadastro {
     min-height: calc(100vh - 149px);
     display: flex;
@@ -377,6 +403,7 @@ footer {
     background-color: #150A0B;
     border-top: 1px solid #6B1622;
     padding: 10px 0;
+    z-index: 100;
 }
 
 .pFooter {
