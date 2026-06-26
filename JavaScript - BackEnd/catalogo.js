@@ -1,6 +1,7 @@
 import { getItens } from "./storage.js";
 
-let categoriaAtiva = "todos"; 
+let categoriaAtiva = "todos";
+let termoBusca = ""; 
 
 export function renderizar() {
     const lista = document.querySelector('#lista-de-itens');
@@ -9,9 +10,11 @@ export function renderizar() {
     
     const todosItens = getItens();
 
-    const itensAtuais = categoriaAtiva === "todos"
-        ? todosItens
-        : todosItens.filter(item => item.categoria === categoriaAtiva);
+    const itensAtuais = todosItens.filter(item => {
+        const categoriaOk = categoriaAtiva === "todos" || item.categoria === categoriaAtiva;
+        const buscaOk = item.nome.toLowerCase().includes(termoBusca.toLowerCase());
+        return categoriaOk && buscaOk;
+    });
     
     if (contador) contador.textContent = itensAtuais.length;
     
@@ -39,6 +42,13 @@ export function renderizar() {
 
             lista.appendChild(clone);
         });
+
+    
+        const mensagem = document.querySelector('#mensagem-vazia');
+        if (mensagem) {
+            mensagem.style.display = itensAtuais.length === 0 ? 'block' : 'none';
+        }
+
         console.log("DOM atualizado com os cards!");
     } else {
         console.error("Erro: lista ou template não foram encontrados no DOM.");
@@ -82,4 +92,12 @@ export function inicializarFiltros() {
 
         container.appendChild(btn);
     });
+
+    const inputBusca = document.querySelector('#busca');
+    if (inputBusca) {
+        inputBusca.addEventListener('input', e => {
+            termoBusca = e.target.value;
+            renderizar();
+        });
+    }
 }
