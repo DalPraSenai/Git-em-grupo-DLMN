@@ -1,5 +1,5 @@
 import { inicializarItens, getItens, salvarItens } from "./storage.js";
-import { renderizar } from "./catalogo.js";
+import { renderizar, inicializarFiltros } from "./catalogo.js";
 
 const itens = [
     {
@@ -32,7 +32,7 @@ const itens = [
       categoria: "Poção",
       raridade: "Raro",
       descricao: "Selado há séculos. Ninguém no inventário teve coragem de abrir pra checar o que tem dentro.",
-      imagem: "../imagens/frasco.png"
+      imagem: "../imagens/frasco.png" 
     },
     {
       id: 5,
@@ -53,9 +53,9 @@ const itens = [
   ];
 
   document.addEventListener('DOMContentLoaded', () => {
-      inicializarItens(itens);
-      console.log("Itens carregados do localStorage:", getItens());
+    inicializarItens(itens);
+    console.log("Itens carregados do localStorage:", getItens());
 
-      renderizar();
-  });
-  
+    inicializarFiltros(); 
+    renderizar();
+});
