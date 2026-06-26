@@ -1,5 +1,5 @@
 import { inicializarItens, getItens, salvarItens } from "./storage.js";
-import { renderizar, inicializarFiltros } from "./catalogo.js";
+import { renderizar } from "./catalogo.js";
 
 const itens = [
     {
@@ -8,7 +8,7 @@ const itens = [
       categoria: "Amuleto",
       raridade: "Raro",
       descricao: "Quem o veste não mente — e não pode ser enganado.",
-      imagem: "img/amuleto.png"
+      imagem: "../Imagens/amuleto.png"
     },
     {
       id: 2,
@@ -16,7 +16,7 @@ const itens = [
       categoria: "Arma",
       raridade: "Épico",
       descricao: "Cada corte que ela faz, alimenta quem a empunha. Tartarius nunca explicou de onde ela vinha — só disse que 'lembrava de casa'.",
-      imagem: "https://img.pikbest.com/origin/09/29/02/94mpIkbEsTdDS.png!sw800"
+      imagem: "../Imagens/adaga.png"
     },
     {
       id: 3,
@@ -32,7 +32,7 @@ const itens = [
       categoria: "Poção",
       raridade: "Raro",
       descricao: "Selado há séculos. Ninguém no inventário teve coragem de abrir pra checar o que tem dentro.",
-      imagem: "img/frasco.png"
+      imagem: "../imagens/frasco.png"
     },
     {
       id: 5,
@@ -40,7 +40,7 @@ const itens = [
       categoria: "Anel",
       raridade: "Lendário",
       descricao: "Concede um fôlego extra no momento da morte. Já foi usado uma vez — funcionou.",
-      imagem: "img/anel.png"
+      imagem: "../Imagens/anel.png"
     },
     {
       id: 6,
@@ -48,7 +48,7 @@ const itens = [
       categoria: "Livro",
       raridade: "Épico",
       descricao: "Faltam páginas. Tartarius dizia que 'eram as melhores partes'.",
-      imagem: "img/grimorio.png"
+      imagem: "../Imagens/livro.png"
     }
   ];
 
@@ -56,7 +56,6 @@ const itens = [
       inicializarItens(itens);
       console.log("Itens carregados do localStorage:", getItens());
 
-      inicializarFiltros();
       renderizar();
   });
   
