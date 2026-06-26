@@ -56,22 +56,146 @@ body {
 }
 
 .cadastro {
-    height: 100vh;
+    min-height: calc(100vh - 149px);
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 30px;
+    background: linear-gradient(180deg, #1b1718,#2b2224);
 }
 
-.cardCadastro {
-    background-color:#0B0708;
-    width: 350px;
-    padding: 30px;
+.card-Cadastro {
+    width: 400px;
+    background: #0B0708;
     border-radius: 15px;
+    padding: 35px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.5);
     display: flex;
     flex-direction: column;
-    gap:10px;
-    box-shadow: 0px 5px 20px rgba(0,0,0,0.3);
-};
+    gap: 18px;
+
+}
+
+.login-titulo {
+    color: #C98A4B;
+    font-family: 'Cinzel', serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0.50px;
+    letter-spacing: 0.15px;
+}
+
+.login-subtitulo {
+    font-family: 'EB Garamond', serif;
+    font-size: 20px;
+    font-style: italic;
+    color:#d7ac73;
+    text-align: center;
+    margin: 0.05px;
+}
+
+.card-Email {
+    margin-bottom: 3px;
+}
+
+.card-Senha {
+    margin-bottom: 3px;
+}
+
+.login-label {
+    font-family: 'Cinzel', serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #b77a2a;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.login-input {
+    width: 100%;
+    height: 40px;
+    padding: 0.15px;
+    background-color: #4d3515;
+    border: 1px solid #ac7619;
+    border-radius: 6px;
+    font-family: 'EB Garamond', serif;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.login-input::placeholder {
+    color: #ebb165;
+    font-style: italic;
+    opacity: 0.7;
+}
+
+.login-esqueceu {
+    font-family: 'EB Garamont', serif;
+    font-size: 15px;
+    font-style: oblique;
+    color: #C98A4B;
+    text-align: center;
+    display: block;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: color 0.15s;
+}
+
+.card-btn {
+    width: 100%;
+    height: 35px;
+    margin-top: 10px;
+    background-color: #4d3515;
+    color: #ebb165;
+    border: 1px solid #ac7619;
+    border-radius: 6px;
+    font-family: 'Cinzel', serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.25px;
+    cursor: pointer;
+
+}
+
+.card-divisor {
+    display: flex ;
+    align-items: center;
+    gap: 10px;
+    margin: 25px 0 0;
+}
+
+.card-divisor hr {
+    flex: 1;
+    border: none;
+    border-top: 1px solid #b77a2a;
+    margin: 0;
+}
+
+.card-divisor span {
+    font-family: 'EB Garamont', serif;
+    font-size: 14px;
+    font-style: italic;
+    color: #b77a2a;
+}
+
+.card-registro {
+    text-align: center;
+    margin-top: 15px;
+    font-family: 'EB Garamont', serif;
+    font-size: 15px;
+    color: #b77a2a;
+}
+
+.card-registro a {
+    color: #d7ac73;
+    text-decoration: underline;
+    transition: color 0.15s;
+}
+
+
+
 
 .pInicio {
     font-family: 'EB Garamond', serif;
