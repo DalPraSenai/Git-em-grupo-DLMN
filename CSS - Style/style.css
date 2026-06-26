@@ -390,3 +390,12 @@ footer {
     border-radius: 0%;
 }
 
+#mensagem-sucesso {
+    background-color: #1a3d1a;
+    border: 1px solid #4a7c4a;
+    color: #C98A4B;
+    font-family: 'EB Garamond', serif;
+    font-size: 16px;
+    border-radius: 6px;
+    text-align: center;
+}
