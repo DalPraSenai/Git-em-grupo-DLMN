@@ -59,37 +59,38 @@
     <h1 class="login-titulo">Crie seu Login</h1>
     <p class="login-subtitulo">O Legado de Tartarius</p>
 
-    <div class="card-Email">
-      <label class="login-label" for="login-email">E-mail</label>
-      <input class="login-input" id="login-email" type="email" placeholder="seu@email.com" autocomplete="email">
+    <div class="mb-3">
+      <label class="login-label" for="nomeDeUsuario">Nome de usuário</label>
+      <input class="form-control login-input" id="nomeDeUsuario" type="text" placeholder="Seu nome...">
+      <div class="invalid-feedback">Preencha o nome de usuário.</div>
     </div>
 
-    <div class="card-Senha">
-      <label class="login-label" for="login-senha">Senha</label>
-      <input class="login-input" id="login-senha" type="password" placeholder="Sua senha secreta..." autocomplete="current-password">
-      <span class="login-esqueceu">Esqueceu a senha?</span>
+    <div class="mb-3">
+      <label class="login-label" for="email">E-mail</label>
+      <input class="form-control login-input" id="email" type="email" placeholder="seu@email.com">
+      <div class="invalid-feedback">Preencha o e-mail.</div>
     </div>
 
-    <button class="card-btn" onclick="login()">Faça com o seu Login</button>
-
-    <div class="card-divisor">
-      <hr><span>ainda não possui uma conta?</span><hr>
+    <div class="mb-3">
+      <label class="login-label" for="senha">Senha</label>
+      <input class="form-control login-input" id="senha" type="password" placeholder="Sua senha secreta...">
+      <div class="invalid-feedback">Preencha a senha.</div>
     </div>
 
-    <p class="card-registro">
-      <a href="cadastro.html">Registrar-se</a>
-    </p>
+    <div class="mb-3">
+      <label class="login-label" for="confirmeSenha">Confirmar senha</label>
+      <input class="form-control login-input" id="confirmeSenha" type="password" placeholder="Repita a senha...">
+      <div class="invalid-feedback" id="erroConfirmarSenha">Confirme a senha.</div>
+    </div>
+
+    <button class="card-btn" onclick="Cadastrar()">Cadastrar</button>
+      <div id="mensagem-sucesso" style="display:none;" class="alert alert-success mt-3">
+      Cadastro realizado com sucesso!
+    </div>
   </div>
 </section>
 
-
-
-
-
-
-      
     <footer class="footer"> <p class="pFooter">O Legado de Tartarius &copy; 2026 — Grupo Tartarius</p> </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    <script type="module" src="../JavaScript - BackEnd/cadastro.js"></script>
-</body>
+  <script src="../JavaScript - BackEnd/cadastro.js"></script></body>
 </html>
