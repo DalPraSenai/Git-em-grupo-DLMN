@@ -1,5 +1,5 @@
-import { inicializarItens, getItens, salvarItens } from "./storage.js";
-import { renderizar, inicializarFiltros } from "./catalogo.js";
+import { inicializarItens, getItens } from "./storage.js";
+import { renderizar, inicializarFiltros, inicializarModal } from "./catalogo.js";
 
 const itens = [
     {
@@ -22,7 +22,7 @@ const itens = [
       id: 3,
       nome: "Amuleto de Lobisomem",
       categoria: "Amuleto",
-      raridade: "Comum",
+      raridade: "Lendário",
       descricao: "Um souvenir de uma das muitas brigas de Tartarius. Ele dizia que era 'só decoração'.",
       imagem: "../Imagens/amuleto de lobisomem.png"
     },
@@ -32,13 +32,13 @@ const itens = [
       categoria: "Poção",
       raridade: "Raro",
       descricao: "Selado há séculos. Ninguém no inventário teve coragem de abrir pra checar o que tem dentro.",
-      imagem: "../imagens/frasco.png" 
+      imagem: "../Imagens/frasco.png"
     },
     {
       id: 5,
       nome: "Anel do Último Suspiro",
       categoria: "Anel",
-      raridade: "Lendário",
+      raridade: "Comum",
       descricao: "Concede um fôlego extra no momento da morte. Já foi usado uma vez — funcionou.",
       imagem: "../Imagens/anel.png"
     },
@@ -50,12 +50,13 @@ const itens = [
       descricao: "Faltam páginas. Tartarius dizia que 'eram as melhores partes'.",
       imagem: "../Imagens/livro.png"
     }
-  ];
+];
 
-  document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
     inicializarItens(itens);
     console.log("Itens carregados do localStorage:", getItens());
 
-    inicializarFiltros(); 
+    inicializarModal();
+    inicializarFiltros();
     renderizar();
 });
