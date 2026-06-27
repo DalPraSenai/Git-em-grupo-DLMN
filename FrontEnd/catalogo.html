@@ -1,25 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=EB+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../CSS - Style/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Itens Magicos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=EB+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS - Style/style.css">
 </head>
 <body>
 
- <main class="container mt-4">
-
-  <!-- Navbar -->
+<!-- Navbar -->
 <header>
   <nav class="navbar navbar-expand-lg bg-body-tertiary py-2 shadow-sm">
     <div class="container-fluid">
 
-      <a class="navbar-brand fw-semibold" href="index.html">
-        Inicio
-      </a>
+      <a class="navbar-brand fw-semibold" href="index.html">Inicio</a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
         <span class="navbar-toggler-icon"></span>
@@ -27,15 +23,12 @@
 
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ms-auto align-items-center gap-2">
-
           <li class="nav-item">
             <a class="nav-link" href="catalogo.html">Itens Mágicos</a>
           </li>
-
           <li class="nav-item">
             <a class="nav-link" href="cadastro.html">Cadastro de Clientes</a>
           </li>
-
           <li class="nav-item">
             <a class="nav-link" href="sobre.html">Sobre</a>
           </li>
@@ -45,32 +38,35 @@
     </div>
   </nav>
 </header>
-<!-- Navbar -->
 
+<main class="container mt-4">
 
-<!-- Conteúdo Principal -->
-<div class="card text-center mb-4">
-  <div class="card-body-contador">
-    <h3 class="card-title" id="contador-itens">1</h3>
-    <p class="card-text">itens catalogados no Legado de Tartarius</p>
+  <!-- Contador de itens -->
+  <div class="card text-center mb-4">
+    <div class="card-body-contador">
+      <h3 class="card-title" id="contador-itens">1</h3>
+      <p class="card-text">itens catalogados no Legado de Tartarius</p>
+    </div>
   </div>
-</div>
 
-<div class="mb-4">
-<input type="text" class="form-control" id="busca" placeholder="Buscar item por nome...">
-</div>
+  <!-- Busca -->
+  <div class="mb-4">
+    <input type="text" class="form-control" id="busca" placeholder="Buscar item por nome...">
+  </div>
 
-<div id="filtros-categoria" class="mb-3 text-center"></div>
+  <!-- Filtros por categoria -->
+  <div id="filtros-categoria" class="mb-3 text-center"></div>
 
-<p id="mensagem-vazia" style="display:none;" class="text-center text-muted mt-4">
-Nenhum item encontrado.
-</p>
+  <p id="mensagem-vazia" style="display:none;" class="text-center text-muted mt-4">
+    Nenhum item encontrado.
+  </p>
 
-<div class="row g-4 justify-content-center" id="lista-de-itens">
-</div>
+  <!-- Lista de cards -->
+  <div class="row g-4 justify-content-center" id="lista-de-itens"></div>
 
 </main>
 
+<!-- Template do card -->
 <template id="template-card">
   <div class="col-md-4">
     <div class="card h-100">
@@ -80,16 +76,38 @@ Nenhum item encontrado.
         <span class="badge item-raridade"></span>
         <p class="text-muted small item-categoria"></p>
         <p class="card-text item-descricao"></p>
+        <button class="btn btn-sm mt-2 btn-excluir">Excluir</button>
       </div>
     </div>
   </div>
 </template>
-<!-- Conteúdo Principal -->
 
+<-- Modal de confirmação de exclusão -->
+<div class="modal fade" id="modalExclusao" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content" style="background-color:#150A0B; border:1px solid #6B1622; color:#D8C5BD;">
+      <div class="modal-header" style="border-bottom:1px solid #6B1622;">
+        <h5 class="modal-title" style="font-family:'Cinzel',serif; color:#C98A4B;">Confirmar Exclusão</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body" style="font-family:'EB Garamond',serif; font-size:18px;">
+        Excluir <strong id="modal-nome-item" style="color:#C98A4B;"></strong>?
+      </div>
+      <div class="modal-footer" style="border-top:1px solid #6B1622;">
+        <button type="button" class="btn btn-sm" data-bs-dismiss="modal" style="background-color:#150A0B; color:#D8C5BD; border:1px solid #6B1622; font-family:'Cinzel',serif;">Cancelar</button>
+        <button type="button" class="btn btn-sm btn-excluir" id="btn-confirmar-exclusao">Excluir</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-<!-- Rodapé -->
-      <footer class="footer"> <p class="pFooter">O Legado de Tartarius &copy; 2026 — Grupo Tartarius</p> </footer>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-      <script type="module" src="../JavaScript - BackEnd/app.js"></script>
+<!-- Footer -->
+<footer class="footer">
+  <p class="pFooter">O Legado de Tartarius &copy; 2026 — Grupo Tartarius</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script type="module" src="../JavaScript - BackEnd/app.js"></script>
+
 </body>
 </html>
