@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=EB+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../CSS - Style/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=EB+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS - Style/style.css">
 </head>
 <body>
-  <div class="bg-blur"></div>
-  <!-- Navbar -->
-   <header>
+
+<!-- Navbar -->
+<header>
   <nav class="navbar navbar-expand-lg bg-body-tertiary py-2 shadow-sm">
     <div class="container-fluid">
 
-      <a class="navbar-brand fw-semibold" href="index.html">
-        Inicio
-      </a>
+      <a class="navbar-brand fw-semibold" href="index.html">Inicio</a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
         <span class="navbar-toggler-icon"></span>
@@ -25,51 +23,75 @@
 
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ms-auto align-items-center gap-2">
-
           <li class="nav-item">
             <a class="nav-link" href="catalogo.html">Itens Mágicos</a>
           </li>
-
           <li class="nav-item">
             <a class="nav-link" href="cadastro.html">Cadastro de Clientes</a>
           </li>
-
           <li class="nav-item">
             <a class="nav-link" href="sobre.html">Sobre</a>
           </li>
         </ul>
       </div>
+
     </div>
   </nav>
 </header>
-<!-- Navbar -->
 
-    
 <!-- Conteúdo Principal -->
-  <div class="hero">
-    <h1 class="Titulo">O Legado de Tartarius</h1>
-    <p class="pInicio">Por mil anos, Michelis Tartarius colecionou — e roubou, e barganhou, e arrancou de mãos mortas — os artefatos mais poderosos (e mais perigosos) do mundo.</p>
-    <p class="pInicio">Agora que ele desapareceu, alguém precisa catalogar essa bagunça.</p>
-    <p class="pInicio">Esse alguém é você.</p>
-    <a class="botaoCatalogo" href="catalogo.html">Explorar o Inventário</a>
-    <div class="containerMichel">
-      <img class="quadrosMichel" src="../Imagens\Michelis1.png" alt="Michelis 1">
-      <img class="quadrosMichel" src="../Imagens\Michelis 2.png" alt="Michelis 2">
-      <img class="quadrosMichel" src="../Imagens\Michelis 3.png" alt="Michelis 3">
-      <img class="quadrosMichel" src="../Imagens\Michelis 4.png" alt="Michelis 4">
-      <img class="quadrosMichel" src="../Imagens\Michelis 5.png" alt="Michelis 5">
-      <img class="quadrosMichel" src="../Imagens\michelis 6.jpg" alt="Michelis 6">
-      <img class="quadrosMichel" src="../Imagens\michelis 7.jpg" alt="Michelis 7">
-      <img class="quadrosMichel" src="../Imagens\michelis 8.jpg" alt="Michelis 8">
-    </div>
-  </div>  
-<!-- Conteúdo Principal -->
+<div class="hero">
+  <h1 class="Titulo">O Legado de Tartarius</h1>
+  <p class="pInicio">Por mil anos, Michelis Tartarius colecionou, roubou, barganhou, e arrancou de mãos mortas os artefatos mais poderosos (e mais perigosos) do mundo.</p>
+  <p class="pInicio">Agora que ele desapareceu, alguém precisa catalogar essa bagunça.</p>
+  <p class="pInicio">Esse alguém é <strong class="destaque">você</strong>.</p>
+  <a class="botaoCatalogo" href="catalogo.html">Explorar o Inventário</a>
 
-    
-    
-    
-<!-- Rodapé -->
-    <footer class="footer"> <p class="pFooter">O Legado de Tartarius &copy; 2026 — Grupo Tartarius</p> </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+ <div class="row g-4 justify-content-center my-4 meus-cards-especiais">
+  <div class="col-md-3">
+    <a href="catalogo.html" class="text-decoration-none">
+      <div class="card-dev">
+        <h5 style="font-family:'Cinzel',serif; color:#C98A4B;">Itens Mágicos</h5>
+        <p style="font-family:'EB Garamond',serif; color:#D8C5BD;">Explore o inventário completo de Tartarius.</p>
+      </div>
+    </a>
+  </div>
+  <div class="col-md-3">
+    <a href="cadastro.html" class="text-decoration-none">
+      <div class="card-dev">
+        <h5 style="font-family:'Cinzel',serif; color:#C98A4B;">Cadastro</h5>
+        <p style="font-family:'EB Garamond',serif; color:#D8C5BD;">Adicione novos itens ao legado.</p>
+      </div>
+    </a>
+  </div>
+  <div class="col-md-3">
+    <a href="sobre.html" class="text-decoration-none">
+      <div class="card-dev">
+        <h5 style="font-family:'Cinzel',serif; color:#C98A4B;">Sobre</h5>
+        <p style="font-family:'EB Garamond',serif; color:#D8C5BD;">Conheça a equipe por trás do sistema.</p>
+      </div>
+    </a>
+  </div>
+</div>
+
+  <div class="containerMichel">
+    <img class="quadrosMichel" src="../Imagens/Michelis1.png" alt="Michelis 1">
+    <img class="quadrosMichel" src="../Imagens/Michelis 2.png" alt="Michelis 2">
+    <img class="quadrosMichel" src="../Imagens/Michelis 3.png" alt="Michelis 3">
+    <img class="quadrosMichel" src="../Imagens/Michelis 4.png" alt="Michelis 4">
+    <img class="quadrosMichel" src="../Imagens/Michelis 5.png" alt="Michelis 5">
+    <img class="quadrosMichel" src="../Imagens/michelis 6.jpg" alt="Michelis 6">
+    <img class="quadrosMichel" src="../Imagens/michelis 7.jpg" alt="Michelis 7">
+    <img class="quadrosMichel" src="../Imagens/michelis 8.jpg" alt="Michelis 8">
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <p class="pFooter">O Legado de Tartarius &copy; 2026 — Grupo Tartarius</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
