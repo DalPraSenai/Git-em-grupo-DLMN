@@ -1,5 +1,3 @@
-
-
 # Legado de Tartarius
 
 > O legado sombrio deixado por Tartarius continua vivo através dos registros preservados neste sistema.
@@ -148,8 +146,6 @@ refactor: reorganiza funções do app.js
 
 ### HTML
 
-Utilizar comentários para separar seções:
-
 ```html
 <!-- Navbar -->
 
@@ -158,15 +154,9 @@ Utilizar comentários para separar seções:
 <!-- Rodapé -->
 ```
 
----
-
 ### CSS
 
-Organizar em blocos:
-
 ```css
-/* Variáveis */
-
 /* Navbar */
 
 /* Hero */
@@ -176,13 +166,11 @@ Organizar em blocos:
 /* Formulários */
 
 /* Rodapé */
+
+/* Animações */
 ```
 
----
-
 ### JavaScript
-
-Organizar funções por responsabilidade:
 
 ```javascript
 // Dados
@@ -227,10 +215,10 @@ Cada tarefa deve possuir:
 * [✓] Filtro por categoria
 * [✓] Contador de itens
 * [✓] LocalStorage funcionando
-* [ ] README atualizado
+* [✓] README atualizado
 * [✓] Kanban atualizado
 * [✓] Todos os integrantes possuem commits
-* [ ] Projeto revisado pela equipe
+* [✓] Projeto revisado pela equipe
 
 ---
 
@@ -244,26 +232,58 @@ Agora cabe aos novos guardiões reconstruir esse conhecimento, catalogar informa
 
 ## Repositório
 
-GitHub: [https://github.com/DalPraSenai/Git-em-grupo-DLMN]
+GitHub: [Git-em-grupo-DLMN](https://github.com/DalPraSenai/Git-em-grupo-DLMN)
 
 ## Kanban
 
-Board: [https://trello.com/invite/b/6a31ea0b0526f0de0f0ec6da/ATTI1d2a8ed6645da41def1fe9a629f016ad9ABE027A/prova-pratica-michel]
+Board: [prova-pratica-michel](https://trello.com/invite/b/6a31ea0b0526f0de0f0ec6da/ATTI1d2a8ed6645da41def1fe9a629f016ad9ABE027A/prova-pratica-michel)
 
+---
 
+## Troubleshooting: imagens/itens não atualizam
 
+Se você editou os itens em `app.js` e a mudança não aparece no site, não é bug — é o `localStorage` guardando os dados antigos.
+
+### Por que acontece
+
+O `storage.js` só salva os itens iniciais uma vez, na primeira abertura do site:
+
+```js
+export function inicializarItens(itensIniciais) {
+    if (carregar('itens').length === 0) {
+        salvar('itens', itensIniciais);
+    }
+}
+```
+
+Depois disso o `localStorage` já tem dados, então nunca mais sobrescreve — mesmo que você mude o `app.js`.
+
+### Como resolver
+
+1. Abra o site no navegador
+2. Aperte **F12** e vá no **Console**
+3. Execute:
+```js
+localStorage.removeItem('tartarius_itens')
+```
+4. Confirme que limpou:
+```js
+localStorage.getItem('tartarius_itens') // deve retornar null
+```
+5. Recarregue a página com **F5**
+
+---
 
 ## Screenshots
 
 ### Catálogo completo
-![Catálogo com todos os itens](Imagens/screenshot1.png.jpeg)
+![Catálogo com todos os itens](Imagens/itens.jpeg)
 
 ### Filtro por categoria
-
-![Busca filtrando por "ada"](Imagens/screenshot2.png.jpeg)
+![Busca filtrando por amuletos](Imagens/amuletositens.jpeg)
 
 ### Busca em tempo real
-![Filtro ativo na categoria Amuleto](Imagens/screenshot4.png.jpeg)
+![Busca Funcionando](Imagens/Buscafuncionando.jpeg)
 
 ### Nenhum resultado encontrado
-![Mensagem de item não encontrado](Imagens/screenshot3.png.jpeg)
+![Mensagem de item não encontrado](Imagens/teste.jpeg)
