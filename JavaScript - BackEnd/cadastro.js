@@ -48,7 +48,7 @@ function cadastrarItem() {
         categoria: categoriaEl.value,
         raridade: raridadeEl.value,
         descricao: descricaoEl.value.trim(),
-        imagem: 'Imagens\default.png'
+        imagem: '../Imagens/default.png'
     };
 
     // Salva no localStorage
