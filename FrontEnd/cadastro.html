@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Clientes</title>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=EB+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../CSS - Style/style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Clientes</title> 
 </head>
 <body>
-  <!-- Navbar -->
 
-    <header>
+<!-- Navbar -->
+<header>
   <nav class="navbar navbar-expand-lg bg-body-tertiary py-2 shadow-sm">
     <div class="container-fluid">
 
-      <a class="navbar-brand fw-semibold" href="index.html">
-        Inicio
-      </a>
+      <a class="navbar-brand fw-semibold" href="index.html">Inicio</a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
         <span class="navbar-toggler-icon"></span>
@@ -25,15 +23,12 @@
 
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ms-auto align-items-center gap-2">
-
           <li class="nav-item">
             <a class="nav-link" href="catalogo.html">Itens Mágicos</a>
           </li>
-
           <li class="nav-item">
             <a class="nav-link" href="cadastro.html">Cadastro de Clientes</a>
           </li>
-
           <li class="nav-item">
             <a class="nav-link" href="sobre.html">Sobre</a>
           </li>
@@ -43,8 +38,6 @@
     </div>
   </nav>
 </header>
-<!-- Navbar -->
-
 
 <!-- Conteúdo Principal -->
 <section class="cadastro">
@@ -66,7 +59,7 @@
 
     <div class="mb-3">
       <label class="login-label" for="senha">Senha</label>
-      <input class="form-control login-input" id="senha" type="password" placeholder="Digite sua senha! 👀 ">
+      <input class="form-control login-input" id="senha" type="password" placeholder="Digite sua senha! 👀">
       <div class="invalid-feedback">Preencha a senha.</div>
     </div>
 
@@ -77,16 +70,20 @@
     </div>
 
     <button class="card-btn" onclick="Cadastrar()">Cadastrar</button>
-      <div id="mensagem-sucesso" style="display:none;" class="alert alert-success mt-3">
+
+    <div id="mensagem-sucesso" style="display:none;" class="alert alert-success mt-3">
       Cadastro realizado com sucesso!
     </div>
   </div>
 </section>
-<!-- Conteúdo Principal -->
 
+<!-- Footer -->
+<footer class="footer">
+  <p class="pFooter">O Legado de Tartarius &copy; 2026 — Grupo Tartarius</p>
+</footer>
 
-<!-- Rodapé -->
-    <footer class="footer"> <p class="pFooter">O Legado de Tartarius &copy; 2026 — Grupo Tartarius</p> </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="../JavaScript - BackEnd/cadastro.js"></script></body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../JavaScript - BackEnd/cadastro.js"></script>
+
+</body>
 </html>
