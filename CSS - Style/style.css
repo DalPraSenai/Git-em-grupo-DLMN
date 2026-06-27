@@ -1,14 +1,15 @@
-
-   .navbar {
+/* ===================== Navbar ===================== */
+.navbar {
     background-color: #150A0B !important;
     border-bottom: 1px solid #6B1622;
 }
 
-.navbar-brand{
+.navbar-brand {
     font-family: 'Cinzel', serif;
     color: #C98A4B !important;
     letter-spacing: 0.5px;
 }
+
 .nav-link {
     font-family: 'Cinzel', serif;
     color: #C98A4B !important;
@@ -34,40 +35,43 @@
     color: #E8C9A0;
 }
 
- 
- /* Body */
+
+/* ===================== Body ===================== */
 body {
     background-color: #0B0708;
     color: #D8C5BD;
     font-family: 'EB Garamond', serif;
     text-align: center;
     min-height: 100vh;
-    padding-bottom: 60px;
+    padding-bottom: 60px; 
 }
 
-/* Titulo do Index */
+
+/* ===================== Título do Index ===================== */
 .Titulo {
     font-family: 'Cinzel', serif;
-    background-color: #150A0B;
     color: #C98A4B;
-    padding: 40px 20px;
-    margin: 0;
+    padding: 20px;
+    margin-top: -20px;
     letter-spacing: 1px;
+    width: 100%;
+    font-size: 52px;
 }
-/* Descrição dos integrantes /Mensagem vazia */
+
+/* ===================== Alterar cor padrão para bronze ===================== */
 .text-muted {
     color: #ac7619 !important;
 }
 
 
-/* Hero/Blur */
-
+/* ===================== Hero com fundo desfocado ===================== */
 .hero {
     position: relative;
     overflow: hidden;
     padding: 40px 20px;
 }
 
+/* Cria o fundo com blur */
 .hero::before {
     content: '';
     position: absolute;
@@ -76,22 +80,24 @@ body {
     background-size: cover;
     background-position: center;
     filter: blur(4px);
-    transform: scale(1.05);
+    transform: scale(1.05); 
     z-index: 0;
 }
 
+/* Garante que o conteúdo fique acima do fundo */
 .hero > * {
     position: relative;
     z-index: 1;
 }
 
+/* ===================== Página de Cadastro ===================== */
 .cadastro {
     min-height: calc(100vh - 149px);
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 30px;
-    background: linear-gradient(180deg, #1b1718,#2b2224);
+    background: linear-gradient(180deg, #1b1718, #2b2224);
 }
 
 .card-Cadastro {
@@ -103,7 +109,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 18px;
-
 }
 
 .login-titulo {
@@ -120,7 +125,7 @@ body {
     font-family: 'EB Garamond', serif;
     font-size: 20px;
     font-style: italic;
-    color:#d7ac73;
+    color: #d7ac73;
     text-align: center;
     margin: 0.05px;
 }
@@ -186,11 +191,10 @@ body {
     font-weight: 600;
     letter-spacing: 0.25px;
     cursor: pointer;
-
 }
 
 .card-divisor {
-    display: flex ;
+    display: flex;
     align-items: center;
     gap: 10px;
     margin: 25px 0 0;
@@ -225,16 +229,20 @@ body {
 }
 
 
-
-
+/* ===================== Página Inicial ===================== */
 .pInicio {
     font-family: 'EB Garamond', serif;
-    font-size: 18px;
+    font-size: 19px;
     color: #D8C5BD;
     max-width: 700px;
     margin: 16px auto;
     padding: 0 20px;
     line-height: 1.7;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.9);
+}
+
+.destaque {
+    color: #e4d93e;
 }
 
 .botaoCatalogo {
@@ -256,10 +264,13 @@ body {
     color: #E8C9A0;
 }
 
+
+/* ===================== Página Sobre ===================== */
 .containerMichel {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
     max-width: 700px;
     margin: 20px auto 60px;
     padding: 0 20px;
@@ -270,7 +281,6 @@ body {
     height: 300px;
     object-fit: cover;
     display: block;
-    margin: 0 auto;
     border: 2px solid #6B1622;
     border-radius: 4px;
     background-color: #150A0B;
@@ -294,14 +304,15 @@ h2 {
 }
 
 
-
- /* Cards */
+/* ===================== Cards gerais ===================== */
 .card {
     background-color: transparent;
     border: none;
     box-shadow: none;
+    animation: revelar 0.5s ease forwards; 
 }
 
+/* Textura de pergaminho */
 .card-body {
     background-color: #ffffff00;
     background-image: url(https://static.vecteezy.com/system/resources/previews/012/981/788/non_2x/old-parchment-paper-sheet-vintage-aged-or-texture-background-png.png);
@@ -335,6 +346,8 @@ h2 {
     font-size: 10px;
 }
 
+
+/* ===================== Contador de itens ===================== */
 .card-body-contador {
     background-color: #150A0B;
     color: #C98A4B;
@@ -355,11 +368,19 @@ h2 {
     margin: 0;
 }
 
-/* Cards falta algumas alterações revisar !!!!! */
+
+/* ===================== Cards do catálogo ===================== */
 .row .card.h-100 {
     background-color: #150A0B;
     border: 1px solid #150A0B;
     border-radius: 4px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Adicionar pó de pirilipimpim */
+.row .card.h-100:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 24px rgba(198, 138, 75, 0.2);
 }
 
 .row .card.h-100 .card-img-top {
@@ -377,13 +398,14 @@ h2 {
 .row .card.h-100 .card-text {
     font-family: 'EB Garamond', serif;
 }
-.row .card-text text-muted{
-    
-        font-family: 'EB Garamond', serif;
-        color: #9A8782;
-        font-size: 14px;
+
+.row .card-text text-muted {
+    font-family: 'EB Garamond', serif;
+    color: #9A8782;
+    font-size: 14px;
 }
-.card-dev{
+
+.card-dev {
     background-color: #150A0B;
     border: 1px solid #6B1622;
     border-radius: 4px;
@@ -391,9 +413,12 @@ h2 {
     margin-bottom: 20px;
 }
 
+.card-dev img {
+    border-radius: 0%;
+}
 
-/* Rodapé */
-/* obs: falta algumas alterações */
+
+/* ===================== Footer ===================== */
 footer {
     text-align: center;
     position: fixed;
@@ -403,7 +428,7 @@ footer {
     background-color: #150A0B;
     border-top: 1px solid #6B1622;
     padding: 10px 0;
-    z-index: 100;
+    z-index: 100; 
 }
 
 .pFooter {
@@ -413,10 +438,9 @@ footer {
     margin: 0;
     font-size: 14px;
 }
-.card-dev img{
-    border-radius: 0%;
-}
 
+
+/* ===================== Mensagem de sucesso ===================== */
 #mensagem-sucesso {
     background-color: #1a3d1a;
     border: 1px solid #4a7c4a;
@@ -425,4 +449,59 @@ footer {
     font-size: 16px;
     border-radius: 6px;
     text-align: center;
+}
+
+
+/* ===================== Botão Excluir ===================== */
+.btn-excluir {
+    background-color: #3D0E14;
+    color: #E8C9A0;
+    border: 1px solid #6B1622;
+    font-family: 'Cinzel', serif;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-excluir:hover {
+    background-color: #6B1622;
+    color: #E8C9A0;
+}
+
+
+/* ===================== Animações ===================== */
+
+/* Cards entram com fade vindo de baixo ao renderizar */
+@keyframes revelar {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Card some com encolhimento */
+@keyframes sumir {
+    to { opacity: 0; transform: scale(0.92); }
+}
+
+.saindo {
+    animation: sumir 0.35s ease forwards;
+}
+
+/* Badge lendario pulsa com brilho dourado */
+@keyframes pulsar {
+    0%, 100% { box-shadow: 0 0 4px #C98A4B; }
+    50%       { box-shadow: 0 0 12px #C98A4B; }
+}
+
+.badge.bg-danger {
+    animation: pulsar 2s ease-in-out infinite;
+}
+
+main {
+    animation: revelar 0.4s ease forwards;
+}
+
+/* ===================== Cards do index ===================== */
+.meus-cards-especiais .card-dev {
+    border-radius: 12px; 
+    overflow: hidden;    
 }
