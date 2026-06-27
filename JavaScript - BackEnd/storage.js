@@ -1,6 +1,6 @@
-const PREFIXO = 'tartarius_'
+const PREFIXO = 'tartarius_';
 
- // ============================== Funções básicas =============================
+// ============================== Funções básicas =============================
 
 function salvar(chave, valor) {
     try {
@@ -19,10 +19,11 @@ function carregar(chave) {
         return [];
     }
 }
- // ============================ PARA ITENS MÁGICOS =============================
+
+// ============================ Para Itens Mágicos =============================
 
 export function inicializarItens(itensIniciais) {
-    if (carregar('itens').length === 0){
+    if (carregar('itens').length === 0) {
         salvar('itens', itensIniciais);
         console.log('Itens iniciais salvos no localStorage');
     }
@@ -32,10 +33,14 @@ export function getItens() {
     return carregar('itens');
 }
 
-export function salvarItens(CaixinhaItens) {
-    salvar('itens', CaixinhaItens);
+export function salvarItens(itens) {
+    salvar('itens', itens);
 }
 
 export function limparItens() {
     localStorage.removeItem(PREFIXO + 'itens');
+}
+
+export function deletarItem(id) {
+    salvarItens(getItens().filter(item => item.id !== id));
 }
