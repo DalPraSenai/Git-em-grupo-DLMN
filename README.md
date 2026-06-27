@@ -227,7 +227,6 @@ Cada tarefa deve possuir:
 * [✓] Filtro por categoria
 * [✓] Contador de itens
 * [✓] LocalStorage funcionando
-* [ ] Responsividade mobile
 * [ ] README atualizado
 * [✓] Kanban atualizado
 * [✓] Todos os integrantes possuem commits
