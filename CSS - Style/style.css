@@ -1,4 +1,4 @@
-/* ===================== Navbar ===================== */
+/* Navbar */
 .navbar {
     background-color: #150A0B !important;
     border-bottom: 1px solid #6B1622;
@@ -36,18 +36,18 @@
 }
 
 
-/* ===================== Body ===================== */
+/* Body */
 body {
     background-color: #0B0708;
     color: #D8C5BD;
     font-family: 'EB Garamond', serif;
     text-align: center;
     min-height: 100vh;
-    padding-bottom: 60px; 
+    padding-bottom: 60px;
 }
 
 
-/* ===================== Título do Index ===================== */
+/* Título do Index */
 .Titulo {
     font-family: 'Cinzel', serif;
     color: #C98A4B;
@@ -58,20 +58,19 @@ body {
     font-size: 52px;
 }
 
-/* ===================== Alterar cor padrão para bronze ===================== */
+/* Sobrescreve cor padrão do Bootstrap pra bronze */
 .text-muted {
     color: #ac7619 !important;
 }
 
 
-/* ===================== Hero com fundo desfocado ===================== */
+/* Hero com fundo desfocado */
 .hero {
     position: relative;
     overflow: hidden;
     padding: 40px 20px;
 }
 
-/* Cria o fundo com blur */
 .hero::before {
     content: '';
     position: absolute;
@@ -80,17 +79,17 @@ body {
     background-size: cover;
     background-position: center;
     filter: blur(4px);
-    transform: scale(1.05); 
+    transform: scale(1.05);
     z-index: 0;
 }
 
-/* Garante que o conteúdo fique acima do fundo */
 .hero > * {
     position: relative;
     z-index: 1;
 }
 
-/* ===================== Página de Cadastro ===================== */
+
+/* Cadastro */
 .cadastro {
     min-height: calc(100vh - 149px);
     display: flex;
@@ -229,7 +228,7 @@ body {
 }
 
 
-/* ===================== Página Inicial ===================== */
+/* Página Inicial */
 .pInicio {
     font-family: 'EB Garamond', serif;
     font-size: 19px;
@@ -265,7 +264,7 @@ body {
 }
 
 
-/* ===================== Página Sobre ===================== */
+/* Página Sobre */
 .containerMichel {
     display: flex;
     flex-wrap: wrap;
@@ -304,12 +303,12 @@ h2 {
 }
 
 
-/* ===================== Cards gerais ===================== */
+/* Cards */
 .card {
     background-color: transparent;
     border: none;
     box-shadow: none;
-    animation: revelar 0.5s ease forwards; 
+    animation: revelar 0.5s ease forwards;
 }
 
 /* Textura de pergaminho */
@@ -347,7 +346,7 @@ h2 {
 }
 
 
-/* ===================== Contador de itens ===================== */
+/* Contador */
 .card-body-contador {
     background-color: #150A0B;
     color: #C98A4B;
@@ -369,7 +368,7 @@ h2 {
 }
 
 
-/* ===================== Cards do catálogo ===================== */
+/* Cards do catálogo */
 .row .card.h-100 {
     background-color: #150A0B;
     border: 1px solid #150A0B;
@@ -377,7 +376,7 @@ h2 {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Adicionar pó de pirilipimpim */
+/* pó de pirilipimpim */
 .row .card.h-100:hover {
     transform: translateY(-6px);
     box-shadow: 0 8px 24px rgba(198, 138, 75, 0.2);
@@ -418,7 +417,7 @@ h2 {
 }
 
 
-/* ===================== Footer ===================== */
+/* Footer */
 footer {
     text-align: center;
     position: fixed;
@@ -428,7 +427,7 @@ footer {
     background-color: #150A0B;
     border-top: 1px solid #6B1622;
     padding: 10px 0;
-    z-index: 100; 
+    z-index: 100;
 }
 
 .pFooter {
@@ -440,7 +439,7 @@ footer {
 }
 
 
-/* ===================== Mensagem de sucesso ===================== */
+/* Mensagem de sucesso */
 #mensagem-sucesso {
     background-color: #1a3d1a;
     border: 1px solid #4a7c4a;
@@ -452,7 +451,7 @@ footer {
 }
 
 
-/* ===================== Botão Excluir ===================== */
+/* Botão Excluir */
 .btn-excluir {
     background-color: #3D0E14;
     color: #E8C9A0;
@@ -469,15 +468,12 @@ footer {
 }
 
 
-/* ===================== Animações ===================== */
-
-/* Cards entram com fade vindo de baixo ao renderizar */
+/* Animações */
 @keyframes revelar {
     from { opacity: 0; transform: translateY(20px); }
     to   { opacity: 1; transform: translateY(0); }
 }
 
-/* Card some com encolhimento */
 @keyframes sumir {
     to { opacity: 0; transform: scale(0.92); }
 }
@@ -486,7 +482,6 @@ footer {
     animation: sumir 0.35s ease forwards;
 }
 
-/* Badge lendario pulsa com brilho dourado */
 @keyframes pulsar {
     0%, 100% { box-shadow: 0 0 4px #C98A4B; }
     50%       { box-shadow: 0 0 12px #C98A4B; }
@@ -500,8 +495,9 @@ main {
     animation: revelar 0.4s ease forwards;
 }
 
-/* ===================== Cards do index ===================== */
+
+/* Cards do index */
 .meus-cards-especiais .card-dev {
-    border-radius: 12px; 
-    overflow: hidden;    
+    border-radius: 12px;
+    overflow: hidden;
 }
